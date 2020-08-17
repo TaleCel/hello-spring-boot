@@ -1,6 +1,6 @@
-package top.izoom.lin.autoconfigure.service;
+package com.talecel.lin.autoconfigure.service;
 
-import top.izoom.lin.autoconfigure.bean.HelloProperty;
+import com.talecel.lin.autoconfigure.bean.HelloProperty;
 
 public class HelloService {
     private HelloProperty helloProperty;

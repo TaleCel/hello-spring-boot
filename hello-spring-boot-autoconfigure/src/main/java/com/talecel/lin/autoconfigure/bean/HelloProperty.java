@@ -1,4 +1,4 @@
-package top.izoom.lin.autoconfigure.bean;
+package com.talecel.lin.autoconfigure.bean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

@@ -1,4 +1,4 @@
-package top.izoom.lin.autoconfigure;
+package com.talecel.lin.autoconfigure;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

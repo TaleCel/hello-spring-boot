@@ -2,24 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
-
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.5.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.talecel</groupId>
+        <artifactId>hello-spring-boot</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.talecel</groupId>
-    <artifactId>hello-spring-boot</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>hello-spring-boot</name>
-    <description>Demo project for Spring Boot</description>
 
-    <modules>
-        <module>hello-spring-boot-autoconfigure</module>
-        <module>hello-spring-boot-starter</module>
-    </modules>
+    <artifactId>hello-spring-boot-autoconfigure</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>hello-spring-boot-autoconfigure</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -31,25 +23,7 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
     </dependencies>
-<!--    <licenses>-->
-<!--        <license>-->
-<!--            <name>The MIT License (MIT)</name>-->
-<!--            <url>https://github.com/TaleLin/lin-cms-java-core/blob/master/LICENSE</url>-->
-<!--            <distribution>repo</distribution>-->
-<!--        </license>-->
-<!--    </licenses>-->
 
     <scm>
         <url>https://github.com/TaleCel/hello-starter</url>
@@ -77,7 +51,6 @@
     <build>
         <plugins>
 
-            <!--将组件部署到OSSRH并将其发布到Central Repository-->
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -90,7 +63,6 @@
                 </configuration>
             </plugin>
 
-            <!-- 生成source jar 文件-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -105,7 +77,6 @@
                 </executions>
             </plugin>
 
-            <!-- 生成javadoc-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -120,7 +91,6 @@
                 </executions>
             </plugin>
 
-            <!-- 对组件进行签名-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
@@ -137,4 +107,5 @@
 
         </plugins>
     </build>
+
 </project>

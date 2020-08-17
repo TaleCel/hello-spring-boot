@@ -1,11 +1,11 @@
-package top.izoom.lin.autoconfigure.configuration;
+package com.talecel.lin.autoconfigure.configuration;
 
+import com.talecel.lin.autoconfigure.bean.HelloProperty;
+import com.talecel.lin.autoconfigure.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import top.izoom.lin.autoconfigure.bean.HelloProperty;
-import top.izoom.lin.autoconfigure.service.HelloService;
 
 @Configuration(proxyBeanMethods = false)
 @EnableConfigurationProperties(HelloProperty.class)

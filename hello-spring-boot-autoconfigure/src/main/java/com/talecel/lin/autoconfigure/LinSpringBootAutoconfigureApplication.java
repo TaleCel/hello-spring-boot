@@ -1,4 +1,4 @@
-package top.izoom.lin.autoconfigure;
+package com.talecel.lin.autoconfigure;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
